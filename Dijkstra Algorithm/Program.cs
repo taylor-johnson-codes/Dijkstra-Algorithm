@@ -6,7 +6,36 @@ namespace Dijkstra_Algorithm
     {
         static void Main(string[] args)
         {
-            // NEED AN UNDIRECTED GRAPH WITH WEIGHTS FOR INPUT
+            // Input for algorithm: an undirected graph with weights
+            // Using an adjacency matrix to represent the graph
+            // int[,] is a 2-D array that represents a matrix of rows and columns
+
+            int[,] adjacencyMatrix =
+           // col 0   1  2  3  4
+            {  // A   B  C  D  E
+                { 0, 10, 3, 0, 0},   // A  row 0
+				{ 10, 0, 4, 2, 0},   // B  row 1
+                { 3, 4, 0, 8, 2},    // C  row 2
+                { 0, 2, 8, 0, 9},    // D  row 3
+                { 0, 0, 2, 9, 0},    // E  row 4
+            };
+
+            /* playing with matrix
+            
+            Console.WriteLine(adjacencyMatrix[2, 0]);  // [row][col]
+            adjacencyMatrix[2, 0] = 111;
+            Console.WriteLine(adjacencyMatrix[2, 0]);  // [row][col]
+
+            // printing matrix
+            for (int i = 0; i < adjacencyMatrix.GetLength(0); i++)  // 0 is for the first dimension (rows) 
+            {
+                for (int j = 0; j < adjacencyMatrix.GetLength(1); j++)  // 1 is for the second dimension (columns)
+                {
+                    Console.Write(adjacencyMatrix[i, j] + "  ");
+                }
+                Console.WriteLine();
+            }
+            */
 
             Console.WriteLine($"-------------------- Initializations --------------------\n");
 
