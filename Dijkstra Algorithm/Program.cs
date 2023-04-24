@@ -48,8 +48,6 @@ namespace Dijkstra_Algorithm
             ArrayList visitedNodes = new ArrayList() { };  // this array will contain all 5 nodes when the algorithm completes
             PrintVisitedArr(visitedNodes);
             
-            // ----------------------------- Dijkstra's Algorithm -----------------------------
-
             int count = 1;  // to count the number of iterations performed
             
             while (unvisitedNodes.Count > 0)  // keep iterating while the unvisitedNodes array isn't empty
@@ -65,7 +63,7 @@ namespace Dijkstra_Algorithm
                 unvisitedNodes.Remove(unvisitedNodes[0]);
 
                 // for each of the node's neighbors, update the distance array
-                // I DON'T KNOW HOW TO INPUT AN UNDIRECTED GRAPH WITH WEIGHTS AND ACCESS NEIGHBORS
+                // I DON'T KNOW HOW TO ACCESS THE NEIGHBORS HERE
 
                 // to compare distance values
                 int priorDistance = distance[INDEX OF NEIGHBOR];  // NEED HELP HERE
